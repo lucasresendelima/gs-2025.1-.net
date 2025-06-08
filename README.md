@@ -81,23 +81,23 @@ Desenvolvido pelo grupo LTAKN:
 
 2. Configure a string de conexão no ```appsettings.json```
 
-  ```json
-  "ConnectionStrings": {
-    "DefaultConnection": "User Id=...;Password=...;Data Source=..."
-  }
-  ```
+   ```json
+   "ConnectionStrings": {
+     "DefaultConnection": "User Id=...;Password=...;Data Source=..."
+   }
+   ```
 
 3. Rode as migrations (opcional, se necessário recriar o banco)
 
-  ```bash
-  dotnet ef database update
-  ```
+   ```bash
+   dotnet ef database update
+   ```
 
 4. Execute o projeto
 
-  ```bash
-  dotnet run
-  ```
+   ```bash
+   dotnet run
+   ```
 
 5. Acesse no navegador
 
