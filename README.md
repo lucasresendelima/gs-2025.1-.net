@@ -51,23 +51,69 @@ Desenvolvido pelo grupo LTAKN:
 ## 🗂️ Organização em Camadas:
 
 ```GestaoAbrigos_WebApp/
+├── Connected Services/
+├── Dependências/
+├── Properties/
+├── wwwroot/
 ├── Application/
-│ ├── Dtos/
-│ ├── Interfaces/
-│ └── Services/
+│   ├── Dtos/
+│   ├── Interfaces/
+│   └── Services/
+├── Controllers/
 ├── Domain/
-│ ├── Entities/
-│ └── Interfaces/
+│   ├── Entities/
+│   └── Interfaces/
 ├── Infrastructure/
-│ └── Data/
-│ └── AppData/
-├── Presentation/
-│ └── Controllers/
-├── Migrations/
-└── Pages/
+│   └── Data/
+│       ├── AppData/
+│       ├── Migrations/
+│       └── Repositories/
+├── Models/
+├── Views/
+│   ├── Abrigo/
+│   ├── Home/
+│   ├── Localizacao/
+│   ├── Ocupante/
+│   ├── Recurso/
+│   └── Shared/
 ```
 
 ---
+
+## 📘 Documentação do Projeto
+## 📊 Diagramas
+O projeto inclui os seguintes diagramas para facilitar o entendimento da arquitetura e estrutura do sistema:
+
+- Diagrama Entidade-Relacionamento (DER): Representa o modelo lógico do banco de dados.
+- Modelo de Dados (MER): Reflete o modelo físico do banco de dados com atributos, tipos e chaves.
+- Diagrama de Classes (caso haja aplicação .NET ou orientada a objetos): Exibe os relacionamentos entre as classes do sistema.
+- Fluxograma ou Diagrama de Casos de Uso (se aplicável): Ilustra os fluxos de interação do usuário com o sistema.
+
+Os diagramas estão disponíveis na pasta ```/docs/diagramas```.
+
+---
+
+## 🚧 Desenvolvimento
+- O projeto foi desenvolvido utilizando as tecnologias:
+
+   - .NET 8 com ASP.NET Razor Pages (MVC ou API)
+   - Entity Framework Core com Migrations
+   - Banco de Dados Relacional (SQL Server, Oracle ou H2)
+   - Repositórios com Injeção de Dependência
+   - Swagger (para APIs)
+   - Bootstrap ou Tailwind (para frontend, se aplicável)
+
+---
+
+## 🧪 Testes
+Os testes foram realizados para validar:
+
+   - Funcionalidades CRUD: Teste de criação, leitura, atualização e exclusão de registros.
+   - Regras de negócio: Exemplo, não permitir o cadastro de abrigos sem capacidade.
+   - Validações em formulário: Campos obrigatórios, tamanhos e formatos.
+   - Respostas da API (se aplicável): Status HTTP esperados (200, 400, 404, etc.)
+
+Testes manuais foram feitos por meio do Swagger, Postman e uso direto da aplicação via navegador.
 
 ---
 
@@ -104,6 +150,25 @@ Desenvolvido pelo grupo LTAKN:
 - Interface Web: ```https://localhost:XXXX```
 
 - Swagger (API REST): ```https://localhost:XXXX/swagger```
+
+---
+
+## 📌 Exemplos de Testes
+- Criar um abrigo via Swagger/Postman (API)
+
+   ```json
+   {
+     "nome": "Abrigo Central",
+     "capacidade": 150,
+     "localizacao": "Zona Leste"
+   }
+   ```
+
+- Verificar lista de abrigos
+   ```GET /api/abrigos```
+
+- Erro esperado
+   - Tentar criar abrigo com capacidade = 0 → retorna erro 400 com mensagem de validação.
 
 ---
 
