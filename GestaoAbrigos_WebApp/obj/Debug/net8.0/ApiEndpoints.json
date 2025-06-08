@@ -1,0 +1,518 @@
+[
+  {
+    "ContainingType": "GestaoAbrigos_WebApp.Controllers.AbrigoApiController",
+    "Method": "GetAll",
+    "RelativePath": "api/abrigo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[GestaoAbrigos_WebApp.Domain.Entities.AbrigoEntity, GestaoAbrigos_WebApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GestaoAbrigos_WebApp.Controllers.AbrigoApiController",
+    "Method": "Create",
+    "RelativePath": "api/abrigo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "abrigoDto",
+        "Type": "GestaoAbrigos_WebApp.Application.Dtos.AbrigoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GestaoAbrigos_WebApp.Domain.Entities.AbrigoEntity",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GestaoAbrigos_WebApp.Controllers.AbrigoApiController",
+    "Method": "GetById",
+    "RelativePath": "api/abrigo/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GestaoAbrigos_WebApp.Domain.Entities.AbrigoEntity",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GestaoAbrigos_WebApp.Controllers.AbrigoApiController",
+    "Method": "Update",
+    "RelativePath": "api/abrigo/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "abrigoDto",
+        "Type": "GestaoAbrigos_WebApp.Application.Dtos.AbrigoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GestaoAbrigos_WebApp.Domain.Entities.AbrigoEntity",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GestaoAbrigos_WebApp.Controllers.AbrigoApiController",
+    "Method": "Delete",
+    "RelativePath": "api/abrigo/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GestaoAbrigos_WebApp.Domain.Entities.AbrigoEntity",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GestaoAbrigos_WebApp.Controllers.LocalizacaoApiController",
+    "Method": "GetAll",
+    "RelativePath": "api/localizacao",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[GestaoAbrigos_WebApp.Domain.Entities.LocalizacaoEntity, GestaoAbrigos_WebApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GestaoAbrigos_WebApp.Controllers.LocalizacaoApiController",
+    "Method": "Create",
+    "RelativePath": "api/localizacao",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "localizacaoDto",
+        "Type": "GestaoAbrigos_WebApp.Application.Dtos.LocalizacaoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GestaoAbrigos_WebApp.Domain.Entities.LocalizacaoEntity",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GestaoAbrigos_WebApp.Controllers.LocalizacaoApiController",
+    "Method": "GetById",
+    "RelativePath": "api/localizacao/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GestaoAbrigos_WebApp.Domain.Entities.LocalizacaoEntity",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GestaoAbrigos_WebApp.Controllers.LocalizacaoApiController",
+    "Method": "Update",
+    "RelativePath": "api/localizacao/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "localizacaoDto",
+        "Type": "GestaoAbrigos_WebApp.Application.Dtos.LocalizacaoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GestaoAbrigos_WebApp.Domain.Entities.LocalizacaoEntity",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GestaoAbrigos_WebApp.Controllers.LocalizacaoApiController",
+    "Method": "Delete",
+    "RelativePath": "api/localizacao/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GestaoAbrigos_WebApp.Domain.Entities.LocalizacaoEntity",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GestaoAbrigos_WebApp.Controllers.OcupanteApiController",
+    "Method": "GetAll",
+    "RelativePath": "api/ocupante",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[GestaoAbrigos_WebApp.Domain.Entities.OcupanteEntity, GestaoAbrigos_WebApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GestaoAbrigos_WebApp.Controllers.OcupanteApiController",
+    "Method": "Create",
+    "RelativePath": "api/ocupante",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ocupanteDto",
+        "Type": "GestaoAbrigos_WebApp.Application.Dtos.OcupanteDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GestaoAbrigos_WebApp.Domain.Entities.OcupanteEntity",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GestaoAbrigos_WebApp.Controllers.OcupanteApiController",
+    "Method": "GetById",
+    "RelativePath": "api/ocupante/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GestaoAbrigos_WebApp.Domain.Entities.OcupanteEntity",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GestaoAbrigos_WebApp.Controllers.OcupanteApiController",
+    "Method": "Update",
+    "RelativePath": "api/ocupante/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "ocupanteDto",
+        "Type": "GestaoAbrigos_WebApp.Application.Dtos.OcupanteDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GestaoAbrigos_WebApp.Domain.Entities.OcupanteEntity",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GestaoAbrigos_WebApp.Controllers.OcupanteApiController",
+    "Method": "Delete",
+    "RelativePath": "api/ocupante/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GestaoAbrigos_WebApp.Domain.Entities.OcupanteEntity",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GestaoAbrigos_WebApp.Controllers.RecursoApiController",
+    "Method": "GetAll",
+    "RelativePath": "api/recurso",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[GestaoAbrigos_WebApp.Domain.Entities.RecursoEntity, GestaoAbrigos_WebApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GestaoAbrigos_WebApp.Controllers.RecursoApiController",
+    "Method": "Create",
+    "RelativePath": "api/recurso",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "recursoDto",
+        "Type": "GestaoAbrigos_WebApp.Application.Dtos.RecursoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GestaoAbrigos_WebApp.Domain.Entities.RecursoEntity",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GestaoAbrigos_WebApp.Controllers.RecursoApiController",
+    "Method": "GetById",
+    "RelativePath": "api/recurso/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GestaoAbrigos_WebApp.Domain.Entities.RecursoEntity",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GestaoAbrigos_WebApp.Controllers.RecursoApiController",
+    "Method": "Update",
+    "RelativePath": "api/recurso/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "recursoDto",
+        "Type": "GestaoAbrigos_WebApp.Application.Dtos.RecursoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GestaoAbrigos_WebApp.Domain.Entities.RecursoEntity",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GestaoAbrigos_WebApp.Controllers.RecursoApiController",
+    "Method": "Delete",
+    "RelativePath": "api/recurso/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GestaoAbrigos_WebApp.Domain.Entities.RecursoEntity",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

@@ -1,0 +1,37 @@
+﻿@model IEnumerable<GestaoAbrigos_WebApp.Domain.Entities.RecursoEntity>
+
+@{
+    ViewData["Title"] = "Recursos";
+}
+
+<h2>Recursos</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Novo Recurso</a>
+</p>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Tipo</th>
+            <th>Unidade de Medida</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Nome</td>
+                <td>@item.Tipo</td>
+                <td>@item.UnidadeMedida</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm">Detalhes</a>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm">Editar</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm">Excluir</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
